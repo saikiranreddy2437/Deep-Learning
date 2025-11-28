@@ -1,0 +1,30 @@
+Viva Script – EmoContext Coursework
+
+1. Introduction
+   - This project focuses on contextual emotion detection from multi-turn conversations.
+   - The dataset used is EmoContext (SemEval-2019 Task 3).
+
+2. Models Implemented
+   - Classical ML models: TF-IDF + Logistic Regression / SVM
+   - Deep Learning model: BiLSTM + Attention
+   - Transformer model: BERT fine-tuning
+
+3. Methodology
+   - Preprocessing involved merging turn1, turn2, turn3 using [SEP]
+   - Models were trained on train.tsv and validated on val.tsv
+   - Evaluation metric: Macro-F1 (official SemEval metric)
+
+4. Results
+   - Logistic Regression: 0.58
+   - SVM: 0.62
+   - BiLSTM: 0.68
+   - BERT: 0.76 (best)
+
+5. Conclusion
+   - Context-aware models like BERT outperform traditional approaches.
+   - Understanding surrounding dialogue is crucial for emotion detection.
+
+6. Future Work
+   - Use RoBERTa or ELECTRA
+   - Increase dataset size
+   - Hyperparameter tuning
