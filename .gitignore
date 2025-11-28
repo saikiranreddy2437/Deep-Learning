@@ -1,0 +1,10 @@
+outputs/
+data/
+__pycache__/
+.ipynb_checkpoints/
+*.pt
+*.joblib
+*.png
+*.pdf
+venv/
+.env
